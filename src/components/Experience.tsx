@@ -1,8 +1,6 @@
 import { Briefcase } from "lucide-react";
-
 const Experience = () => {
-  return (
-    <section id="experience" className="py-20 px-6">
+  return <section id="experience" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">
           Work Experience
@@ -17,7 +15,7 @@ const Experience = () => {
             <div className="flex-1">
               <h3 className="text-2xl font-bold mb-2">Full Stack Developer Intern</h3>
               <p className="text-primary font-semibold mb-2">Overload Ware Labs AI</p>
-              <p className="text-muted-foreground mb-4">Oct 2024 – Oct 2025</p>
+              <p className="text-muted-foreground mb-4">Oct 2025</p>
               
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
@@ -33,8 +31,6 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Experience;
