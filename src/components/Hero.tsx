@@ -20,7 +20,7 @@ const Hero = () => {
           <br />
           web experiences with
           <br />
-          <span className="glow-text">creativity and innovation</span>
+          <span className="glow-text">I'm a Software Engineer</span>
         </h1>
 
         {/* Subtitle */}
