@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Download, Linkedin } from "lucide-react";
+import { Download, Linkedin } from "lucide-react";
 const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Animated background glow */}
@@ -42,7 +42,7 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="h-6 w-6 text-muted-foreground" />
+          
         </div>
       </div>
     </section>;
