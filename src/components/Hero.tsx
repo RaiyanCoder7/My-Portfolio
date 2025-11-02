@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download, Linkedin } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Animated background glow */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-secondary/10 to-transparent blur-3xl animate-glow-pulse" />
       
@@ -11,7 +9,7 @@ const Hero = () => {
         {/* Greeting */}
         <div className="mb-6 inline-block">
           <span className="text-muted-foreground text-lg md:text-xl">
-            Hi, I'm <span className="gradient-text font-semibold">Raiyan</span> 👋
+            Hi, I'm <span className="gradient-text font-semibold">Md Raiyan Raza Khan</span> 👋
           </span>
         </div>
 
@@ -32,19 +30,11 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-glow transition-all duration-300 hover:scale-105"
-            onClick={() => window.open('https://linkedin.com/in/mdraiyanrazakhan', '_blank')}
-          >
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-glow transition-all duration-300 hover:scale-105" onClick={() => window.open('https://linkedin.com/in/mdraiyanrazakhan', '_blank')}>
             <Linkedin className="mr-2 h-5 w-5" />
             Let's Connect
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-primary/50 hover:border-primary text-foreground px-8 py-6 text-lg rounded-full hover:bg-primary/10 transition-all duration-300 hover:scale-105"
-          >
+          <Button size="lg" variant="outline" className="border-2 border-primary/50 hover:border-primary text-foreground px-8 py-6 text-lg rounded-full hover:bg-primary/10 transition-all duration-300 hover:scale-105">
             <Download className="mr-2 h-5 w-5" />
             Download Resume
           </Button>
@@ -55,8 +45,6 @@ const Hero = () => {
           <ArrowDown className="h-6 w-6 text-muted-foreground" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
