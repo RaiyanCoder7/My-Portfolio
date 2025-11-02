@@ -20,7 +20,7 @@ const Hero = () => {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-          CSE Undergrad | Aspiring Software Developer | AI & Tech Enthusiast from Hyderabad, India
+          I create intelligent, scalable, and user-focused web solutions that bring ideas to life. Open to internship and developer roles where I can build, learn, and make an impact.
         </p>
 
         {/* CTA Buttons */}
