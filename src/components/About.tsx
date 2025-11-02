@@ -1,4 +1,5 @@
-import { User } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import profileImage from "@/assets/profile.jpg";
 
 const About = () => {
   return (
@@ -9,9 +10,10 @@ const About = () => {
             {/* Avatar with glow effect */}
             <div className="relative flex justify-center md:justify-start">
               <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-primary to-secondary p-1 animate-glow-pulse">
-                <div className="w-full h-full rounded-full bg-card flex items-center justify-center overflow-hidden">
-                  <User className="w-32 h-32 text-primary" />
-                </div>
+                <Avatar className="w-full h-full">
+                  <AvatarImage src={profileImage} alt="Md Raiyan Raza Khan" className="object-cover" />
+                  <AvatarFallback className="text-5xl bg-card text-primary">RK</AvatarFallback>
+                </Avatar>
               </div>
             </div>
 
