@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "WallyCart (Walmart Sparkathon)",
-    description: "WallyCart is a smart, health-focused shopping assistant built with React. It combines AR-style previews, a shopping cart, and a helpful chatbot to guide users in making better shopping decisions. Ideal for hackathons, demos, and learning modern React practices.",
+    description: "WallyCart is a smart, health-focused shopping assistant built with React. It combines AR-style previews, a shopping cart, and a helpful chatbot to guide users in making better shopping decisions.",
     tech: "React · Firebase · AR.js",
     link: "https://wallycart.vercel.app/",
     github: "#"
