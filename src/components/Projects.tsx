@@ -10,9 +10,9 @@ const projects = [
   },
   {
     title: "Sentiment Analysis of Stock Market News",
-    description: "A web app for predicting market sentiment using NLP and machine learning algorithms. Analyzes stock market news and social media data to provide real-time sentiment analysis and market predictions based on advanced natural language processing techniques.",
+    description: "This project is a ML web application that analyzes stock-related news headlines and predicts whether the sentiment is positive or negative. It helps investors quickly understand the emotional tone of news that could impact market decisions.",
     tech: "Python · Pandas · Scikit-learn · NLP",
-    link: "#",
+    link: "https://stock-sentiment-analysis-izgap93wkv4oueu5mayn2a.streamlit.app/",
     github: "#"
   },
   {
