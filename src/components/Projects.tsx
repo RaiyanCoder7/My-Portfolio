@@ -3,7 +3,7 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     title: "Athleticore",
-    description: "Athlete management web app to track performance and analyze data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+    description: "AthletiCore is a powerful, intuitive athlete management platform designed to streamline performance tracking, injury management, and career development — empowering both coaches and athletes.",
     tech: "React · Firebase · Node.js",
     link: "https://athlete-management-fb863.web.app/",
     github: "#"
