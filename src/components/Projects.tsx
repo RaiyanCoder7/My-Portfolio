@@ -1,4 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
+import athleticoreScreenshot from "@/assets/athleticore-screenshot.png";
 
 const projects = [
   {
@@ -6,7 +7,8 @@ const projects = [
     description: "AthletiCore is a powerful, intuitive athlete management platform designed to streamline performance tracking, injury management, and career development — empowering both coaches and athletes.",
     tech: "React · Firebase · Node.js",
     link: "https://athlete-management-fb863.web.app/",
-    github: "#"
+    github: "#",
+    image: athleticoreScreenshot
   },
   {
     title: "Sentiment Analysis of Stock Market News",
@@ -87,13 +89,21 @@ const Projects = () => {
               {/* Image Side */}
               <div className="flex-1">
                 <div className="glass rounded-lg border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-glow overflow-hidden">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <div className="w-full h-64 bg-card/50 rounded border border-border/30 flex items-center justify-center">
-                        <p className="text-muted-foreground text-sm">Project Screenshot</p>
+                  {project.image ? (
+                    <img 
+                      src={project.image} 
+                      alt={`${project.title} screenshot`}
+                      className="w-full h-full object-cover aspect-video"
+                    />
+                  ) : (
+                    <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+                      <div className="text-center p-8">
+                        <div className="w-full h-64 bg-card/50 rounded border border-border/30 flex items-center justify-center">
+                          <p className="text-muted-foreground text-sm">Project Screenshot</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>
