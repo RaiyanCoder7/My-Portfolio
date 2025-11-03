@@ -1,73 +1,102 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
     title: "Athleticore",
-    description: "Athlete management web app to track performance and analyze data.",
+    description: "Athlete management web app to track performance and analyze data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
     tech: "React · Firebase · Node.js",
     link: "https://athlete-management-fb863.web.app/",
-    gradient: "from-blue-500 to-cyan-500"
+    github: "#"
   },
   {
     title: "Sentiment Analysis of Stock Market News",
-    description: "Predicts market sentiment using NLP and machine learning algorithms.",
+    description: "A web app for predicting market sentiment using NLP and machine learning algorithms. Analyzes stock market news and social media data to provide real-time sentiment analysis and market predictions based on advanced natural language processing techniques.",
     tech: "Python · Pandas · Scikit-learn · NLP",
     link: "#",
-    gradient: "from-purple-500 to-pink-500"
+    github: "#"
   },
   {
     title: "WallyCart (Walmart Sparkathon)",
-    description: "AR-powered shopping experience with chatbot and immersive UI.",
+    description: "AR-powered shopping experience with chatbot and immersive UI. Revolutionary shopping platform that combines augmented reality with intelligent chatbot assistance to create an immersive and interactive retail experience for modern consumers.",
     tech: "React · Firebase · AR.js",
     link: "#",
-    gradient: "from-orange-500 to-red-500"
+    github: "#"
   }
 ];
 
 const Projects = () => {
   return (
     <section id="projects" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold mb-20 text-center gradient-text">
           Featured Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="space-y-32">
           {projects.map((project, index) => (
-            <Card
+            <div
               key={index}
-              className="glass border-border/50 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-glow group animate-fade-in"
+              className={`flex flex-col ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              } gap-8 md:gap-12 items-center animate-fade-in`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              {/* Gradient top bar */}
-              <div className={`h-2 bg-gradient-to-r ${project.gradient} rounded-t-xl`} />
-              
-              <CardHeader>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                  {project.title}
-                </CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  {project.description}
-                </CardDescription>
-              </CardHeader>
-              
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">{project.tech}</p>
-                {project.link !== "#" && (
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-full border-primary/30 hover:border-primary hover:bg-primary/10"
-                    onClick={() => window.open(project.link, '_blank')}
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    View Project
-                  </Button>
-                )}
-              </CardContent>
-            </Card>
+              {/* Content Side */}
+              <div className="flex-1 space-y-6">
+                <div>
+                  <p className="text-sm text-primary/80 font-medium mb-2">Featured Project</p>
+                  <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                    {project.title}
+                  </h3>
+                </div>
+
+                <div className="glass p-6 rounded-lg border border-border/50 hover:border-primary/50 transition-all duration-300">
+                  <p className="text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
+                </div>
+
+                <p className="text-sm text-muted-foreground font-mono">
+                  {project.tech}
+                </p>
+
+                <div className="flex gap-4">
+                  {project.github !== "#" && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      <Github className="w-6 h-6" />
+                    </a>
+                  )}
+                  {project.link !== "#" && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      <ExternalLink className="w-6 h-6" />
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              {/* Image Side */}
+              <div className="flex-1">
+                <div className="glass rounded-lg border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-glow overflow-hidden">
+                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+                    <div className="text-center p-8">
+                      <div className="w-full h-64 bg-card/50 rounded border border-border/30 flex items-center justify-center">
+                        <p className="text-muted-foreground text-sm">Project Screenshot</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
