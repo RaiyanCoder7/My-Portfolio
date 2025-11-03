@@ -15,7 +15,7 @@ const Hero = () => {
 
         {/* Main heading with typing effect */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="glow-text">I'm an Aspiring Software Developer</span>
+          <span className="glow-text">Aspiring Software Developer</span>
         </h1>
 
         {/* Subtitle */}
@@ -29,12 +29,9 @@ const Hero = () => {
             <Linkedin className="mr-2 h-5 w-5" />
             Let's Connect
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-2 border-primary/50 hover:border-primary text-foreground px-8 py-6 text-lg rounded-full hover:bg-primary/10 transition-all duration-300 hover:scale-105"
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-          >
+          <Button size="lg" variant="outline" className="border-2 border-primary/50 hover:border-primary text-foreground px-8 py-6 text-lg rounded-full hover:bg-primary/10 transition-all duration-300 hover:scale-105" onClick={() => document.getElementById('projects')?.scrollIntoView({
+          behavior: 'smooth'
+        })}>
             <Download className="mr-2 h-5 w-5" />
             View My Work
           </Button>
