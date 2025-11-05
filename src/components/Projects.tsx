@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from "lucide-react";
 import athleticoreScreenshot from "@/assets/athleticore-screenshot.png";
+import sentimentScreenshot from "@/assets/sentiment-screenshot.png";
 
 const projects = [
   {
@@ -15,7 +16,8 @@ const projects = [
     description: "This project is a ML web application that analyzes stock-related news headlines and predicts whether the sentiment is positive or negative. It helps investors quickly understand the emotional tone of news that could impact market decisions.",
     tech: "Python · Pandas · Scikit-learn · NLP",
     link: "https://stock-sentiment-analysis-izgap93wkv4oueu5mayn2a.streamlit.app/",
-    github: "#"
+    github: "#",
+    image: sentimentScreenshot
   },
   {
     title: "WallyCart (Walmart Sparkathon)",
