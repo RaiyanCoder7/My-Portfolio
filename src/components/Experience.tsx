@@ -20,11 +20,23 @@ const Experience = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="mr-2 text-primary">▹</span>
-                  Developed AI-driven web modules using modern full-stack tools
+                  Developed an AI-powered research assistant that helps users collect, organize, and analyze research documents efficiently
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 text-primary">▹</span>
-                  Built responsive interfaces optimized for user engagement
+                  Integrated semantic search and AI-driven insights including summaries, key points, and sentiment analysis for faster knowledge extraction
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-primary">▹</span>
+                  Built an intuitive React + Vite dashboard for uploading, categorizing, previewing, and managing documents
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-primary">▹</span>
+                  Designed a secure backend using Node.js, Express.js, MongoDB, supporting user authentication and structured data storage
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-primary">▹</span>
+                  Deployed the project with Vercel (frontend) and Render (backend) ensuring smooth performance and scalability
                 </li>
               </ul>
             </div>
