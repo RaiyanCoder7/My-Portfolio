@@ -1,4 +1,4 @@
-import { Briefcase } from "lucide-react";
+import { Briefcase, Github } from "lucide-react";
 const Experience = () => {
   return <section id="experience" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
@@ -13,7 +13,17 @@ const Experience = () => {
             </div>
             
             <div className="flex-1">
-              <h3 className="text-2xl font-bold mb-2">Full Stack Developer Intern</h3>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-2xl font-bold">Full Stack Developer Intern</h3>
+                <a
+                  href="https://github.com/RaiyanCoder7/Owl-internship-task"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  <Github className="w-6 h-6" />
+                </a>
+              </div>
               <p className="text-primary font-semibold mb-2">Overload Ware Labs AI</p>
               <p className="text-muted-foreground mb-4">Oct 2025</p>
               
