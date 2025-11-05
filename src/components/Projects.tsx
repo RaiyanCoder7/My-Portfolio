@@ -9,7 +9,7 @@ const projects = [
     description: "AthletiCore is a powerful, intuitive athlete management platform designed to streamline performance tracking, injury management, and career development — empowering both coaches and athletes.",
     tech: "React · Firebase · Node.js",
     link: "https://athlete-management-fb863.web.app/",
-    github: "#",
+    github: "https://github.com/RaiyanCoder7/AthletiCore",
     image: athleticoreScreenshot
   },
   {
