@@ -1,6 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import athleticoreScreenshot from "@/assets/athleticore-screenshot.png";
 import sentimentScreenshot from "@/assets/sentiment-screenshot.png";
+import wallycartScreenshot from "@/assets/wallycart-screenshot.png";
 
 const projects = [
   {
@@ -24,7 +25,8 @@ const projects = [
     description: "WallyCart is a smart, health-focused shopping assistant built with React. It combines AR-style previews, a shopping cart, and a helpful chatbot to guide users in making better shopping decisions.",
     tech: "React · Firebase · AR.js",
     link: "https://wallycart.vercel.app/",
-    github: "#"
+    github: "#",
+    image: wallycartScreenshot
   }
 ];
 
