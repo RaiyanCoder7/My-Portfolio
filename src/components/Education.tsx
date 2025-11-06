@@ -8,14 +8,14 @@ const education = [
     period: "2023 – 2027"
   },
   {
-    degree: "B.Tech, Computer Science and Engineering",
-    institution: "Global Institute of Engineering and Technology",
-    period: "2023 – 2027"
-  },
-  {
     degree: "ISC, Computer Science",
     institution: "Tarapore School",
-    period: "2020 – 2022"
+    period: "2020 – 2022",
+    additional: {
+      degree: "ICSE, Science",
+      institution: "Tarapore School",
+      period: "2020"
+    }
   }
 ];
 
@@ -27,7 +27,7 @@ const Education = () => {
           Education
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {education.map((edu, index) => (
             <Card
               key={index}
@@ -42,7 +42,15 @@ const Education = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm mb-2">{edu.institution}</p>
-                <p className="text-primary text-sm font-semibold">{edu.period}</p>
+                <p className="text-primary text-sm font-semibold mb-4">{edu.period}</p>
+                
+                {edu.additional && (
+                  <div className="mt-4 pt-4 border-t border-border/30">
+                    <CardTitle className="text-lg leading-tight mb-2">{edu.additional.degree}</CardTitle>
+                    <p className="text-muted-foreground text-sm mb-2">{edu.additional.institution}</p>
+                    <p className="text-primary text-sm font-semibold">{edu.additional.period}</p>
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
