@@ -5,6 +5,7 @@ const education = [
   {
     degree: "B.Tech, Computer Science and Engineering",
     institution: "JNTUH College of Engineering Hyderabad",
+    cgpa: "8.1",
     period: "2023 – 2027"
   },
   {
@@ -42,6 +43,9 @@ const Education = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm mb-2">{edu.institution}</p>
+                {edu.cgpa && (
+                  <p className="text-foreground text-sm font-medium mb-2">CGPA: {edu.cgpa}</p>
+                )}
                 <p className="text-primary text-sm font-semibold mb-4">{edu.period}</p>
                 
                 {edu.additional && (
