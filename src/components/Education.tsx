@@ -10,7 +10,7 @@ const education = [
   {
     degree: "ISC, Computer Science",
     institution: "Tarapore School",
-    period: "2020 – 2022",
+    period: "2022",
     additional: {
       degree: "ICSE, Science",
       institution: "Tarapore School",
