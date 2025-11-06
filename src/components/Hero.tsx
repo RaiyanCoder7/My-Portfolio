@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-5xl mx-auto text-center animate-fade-in-up">
         {/* Greeting */}
         <div className="mb-6 inline-block">
-          <span className="text-muted-foreground text-lg md:text-xl">
+          <span className="text-muted-foreground text-lg md:text-xl overflow-hidden whitespace-nowrap inline-block animate-typing border-r-2 border-primary">
             Hi, I'm <span className="gradient-text font-semibold">Md Raiyan Raza Khan</span> 👋
           </span>
         </div>
