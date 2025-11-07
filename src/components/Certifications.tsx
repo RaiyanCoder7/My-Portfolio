@@ -5,8 +5,14 @@ import certNeo4j from "@/assets/cert-neo4j.png";
 import certGDG from "@/assets/cert-gdg.jpg";
 import certNaukri from "@/assets/cert-naukri.jpg";
 import certPostman from "@/assets/cert-postman.jpg";
+import certSIH from "@/assets/cert-sih.jpg";
 
 const certifications = [
+  {
+    name: "Winner at Internal SIH Hackathon 2025",
+    link: "https://drive.google.com/file/d/1_cL2oB6ZMJih3p9Tu6gMdFshAHlaN8HQ/view?usp=drivesdk",
+    image: certSIH
+  },
   {
     name: "Gen AI Exchange Program",
     link: "https://certificate.hack2skill.com/user/genai5/2025H2S04GENAI-A500167",
