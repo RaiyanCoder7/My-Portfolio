@@ -1,26 +1,36 @@
 import { Award, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import certGenAI from "@/assets/cert-genai.jpg";
+import certNeo4j from "@/assets/cert-neo4j.png";
+import certGDG from "@/assets/cert-gdg.jpg";
+import certNaukri from "@/assets/cert-naukri.jpg";
+import certPostman from "@/assets/cert-postman.jpg";
 
 const certifications = [
   {
     name: "Gen AI Exchange Program",
-    link: "https://certificate.hack2skill.com/user/genai5/2025H2S04GENAI-A500167"
+    link: "https://certificate.hack2skill.com/user/genai5/2025H2S04GENAI-A500167",
+    image: certGenAI
   },
   {
     name: "Neo4j Certified Professional",
-    link: "https://graphacademy.neo4j.com/c/f23dc65a-b9d6-42b0-a14d-e7c0ec304b01/"
+    link: "https://graphacademy.neo4j.com/c/f23dc65a-b9d6-42b0-a14d-e7c0ec304b01/",
+    image: certNeo4j
   },
   {
     name: "GDG Solution Challenge India",
-    link: "https://certificate.hack2skill.com/user/gdgscsubmissions/2025H2S01GSC-I08025"
+    link: "https://certificate.hack2skill.com/user/gdgscsubmissions/2025H2S01GSC-I08025",
+    image: certGDG
   },
   {
     name: "Naukri Campus Young Turks 25",
-    link: "https://drive.google.com/file/d/1MikPe0giUGJyZu7gUurqfo9whsX5qzCQ/view?usp=drivesdk"
+    link: "https://drive.google.com/file/d/1MikPe0giUGJyZu7gUurqfo9whsX5qzCQ/view?usp=drivesdk",
+    image: certNaukri
   },
   {
     name: "Postman API Fundamentals Student Expert",
-    link: "https://api.badgr.io/public/assertions/25EzeQ8KRFuZNfSc3O0cwA"
+    link: "https://api.badgr.io/public/assertions/25EzeQ8KRFuZNfSc3O0cwA",
+    image: certPostman
   }
 ];
 
@@ -40,15 +50,14 @@ const Certifications = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex flex-col md:flex-row">
-                {/* Decorative Left Side */}
-                <div className="md:w-64 h-32 md:h-auto bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 relative overflow-hidden flex-shrink-0">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Award className="h-16 w-16 text-primary/40" />
-                  </div>
-                  {/* Decorative shapes */}
-                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-primary/30 blur-xl"></div>
-                  <div className="absolute bottom-4 right-4 w-16 h-16 rounded-full bg-secondary/30 blur-xl"></div>
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full border-2 border-primary/20"></div>
+                {/* Certificate Image Left Side */}
+                <div className="md:w-80 h-48 md:h-auto relative overflow-hidden flex-shrink-0 bg-muted/30">
+                  <img 
+                    src={cert.image} 
+                    alt={cert.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/10"></div>
                 </div>
 
                 {/* Content Right Side */}
