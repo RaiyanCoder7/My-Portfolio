@@ -1,7 +1,5 @@
 import { Award, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { useState } from "react";
 
 const certifications = [
   {
@@ -27,8 +25,6 @@ const certifications = [
 ];
 
 const Certifications = () => {
-  const [selectedCert, setSelectedCert] = useState<typeof certifications[0] | null>(null);
-
   return (
     <section id="certifications" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
@@ -47,28 +43,15 @@ const Certifications = () => {
                 <Award className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <p className="text-foreground font-medium">{cert.name}</p>
               </div>
-              
-              <Dialog>
-                <DialogTrigger asChild>
-                  <button
-                    onClick={() => setSelectedCert(cert)}
-                    className="flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors font-medium group text-left"
-                  >
-                    View Certificate
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </button>
-                </DialogTrigger>
-                <DialogContent className="max-w-5xl h-[80vh]">
-                  <DialogHeader>
-                    <DialogTitle>{cert.name}</DialogTitle>
-                  </DialogHeader>
-                  <iframe
-                    src={cert.link}
-                    className="w-full h-full rounded-lg"
-                    title={cert.name}
-                  />
-                </DialogContent>
-              </Dialog>
+              <a
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors font-medium group"
+              >
+                View Certificate
+                <ExternalLink className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
             </div>
           ))}
         </div>
