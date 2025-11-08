@@ -38,6 +38,7 @@ const Contact = () => {
                 size="lg"
                 variant="outline"
                 className="flex-1 border-primary/50 hover:border-primary"
+                onClick={() => window.open('https://github.com/RaiyanCoder7', '_blank')}
               >
                 <Github className="h-5 w-5" />
               </Button>
