@@ -1,4 +1,5 @@
-import { Briefcase, Github } from "lucide-react";
+import { Briefcase, Github, Award } from "lucide-react";
+import { Button } from "@/components/ui/button";
 const Experience = () => {
   return <section id="experience" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
@@ -49,6 +50,21 @@ const Experience = () => {
                   Deployed the project with Vercel (frontend) and Render (backend) ensuring smooth performance and scalability
                 </li>
               </ul>
+              
+              <Button 
+                asChild 
+                className="mt-6"
+              >
+                <a
+                  href="https://drive.google.com/file/d/1WVWjEd1glLqyUqHxREhzlHgrkaE1hwGE/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
+                  <Award className="w-4 h-4" />
+                  View Completion Certificate
+                </a>
+              </Button>
             </div>
           </div>
         </div>
