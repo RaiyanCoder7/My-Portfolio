@@ -105,7 +105,7 @@ export default {
         "scale-in": "scale-in 0.4s ease-out forwards",
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
-        "typing": "typing 3.5s steps(40, end)"
+        "typing": "typing 3.5s steps(40, end) infinite"
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
