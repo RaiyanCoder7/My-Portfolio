@@ -24,7 +24,7 @@ const Navigation = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold gradient-text">RR</div>
+        <div />
 
         <div className="hidden md:flex gap-6">
           <Button
