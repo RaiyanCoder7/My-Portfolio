@@ -23,7 +23,7 @@ const About = () => {
                 About Me
               </h2>
               <p className="text-muted-foreground leading-relaxed text-lg">
-                I'm a third-year Computer Science Engineering student driven by a passion for coding, 
+                I'm a final year Computer Science Engineering student driven by a passion for coding, 
                 software development, and APIs. With hands-on experience in AI-based and full-stack projects, 
                 I enjoy solving real-world problems through code and design.
                 <br /><br />
