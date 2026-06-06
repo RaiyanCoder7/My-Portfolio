@@ -72,12 +72,9 @@ const Certifications = () => {
                     <div className="text-xs uppercase tracking-wider text-muted-foreground mb-2">
                       Certificate of Achievement
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">
+                    <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-violet-400 bg-clip-text text-transparent mb-2">
                       {cert.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground">
-                      This certification validates professional expertise and successful completion of the program requirements.
-                    </p>
                   </div>
 
                   <a
