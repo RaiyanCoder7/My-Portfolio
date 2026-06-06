@@ -5,7 +5,7 @@ const education = [
     year: "2023 – 2027",
     degree: "B.Tech, Computer Science and Engineering",
     institution: "JNTUH College of Engineering Hyderabad",
-    cgpa: "8.1",
+    cgpa: "8.22",
     color: "from-teal-500 to-teal-600"
   },
   {
