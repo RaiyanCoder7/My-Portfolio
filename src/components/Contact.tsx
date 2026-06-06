@@ -1,9 +1,27 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { toast } from "sonner";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!name || !email || !message) {
+      toast.error("Please fill in all fields");
+      return;
+    }
+    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    window.location.href = `mailto:mdraiyanrazakhan123@gmail.com?subject=${subject}&body=${body}`;
+    toast.success("Opening your email client...");
+  };
+
   return (
     <section id="contact" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
@@ -46,19 +64,25 @@ const Contact = () => {
           </div>
 
           {/* Contact form */}
-          <form className="space-y-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <form onSubmit={handleSubmit} className="space-y-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <Input
               placeholder="Your Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="glass border-border/50 focus:border-primary"
             />
             <Input
               type="email"
               placeholder="Your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="glass border-border/50 focus:border-primary"
             />
             <Textarea
               placeholder="Your Message"
               rows={5}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className="glass border-border/50 focus:border-primary resize-none"
             />
             <Button
