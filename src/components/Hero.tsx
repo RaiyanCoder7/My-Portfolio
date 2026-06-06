@@ -15,7 +15,7 @@ const Hero = () => {
 
         {/* Main heading with typing effect */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="glow-text">Aspiring Software Developer</span>
+          <span className="glow-text">Software Developer</span>
         </h1>
 
         {/* Subtitle */}
